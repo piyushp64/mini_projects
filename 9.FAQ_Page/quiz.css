@@ -1,0 +1,144 @@
+body {
+  font-family: 'Comic Neue', cursive;
+  background: linear-gradient(to bottom, #fceabb, #f8b500);
+  padding: 0;
+  margin: 0;
+  color: #2d3436;
+}
+
+
+.site-header {
+  background-color: #fd79a8;
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.site-header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.site-header nav a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.site-header nav a:hover {
+  text-decoration: underline;
+}
+
+
+.faq-section {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #fffdf5;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  border: 4px dashed #f39c12;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #e67e22;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.question {
+  background-color: #ffeaa7;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #2d3436;
+  transition: background 0.3s;
+}
+
+.question:hover {
+  background-color: #fdcb6e;
+}
+
+.question.active {
+  background-color: #fab1a0;
+}
+
+.answer {
+  display: none;
+  padding: 15px 20px;
+  background-color: #dfe6e9;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.4s ease-in;
+  font-size: 1rem;
+  color: #2d3436;
+}
+
+.answer.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.site-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #fab1a0;
+  color: #2d3436;
+  font-size: 1rem;
+  margin-top: 40px;
+  border-top: 4px dotted #e84393;
+}
+
+.site-footer a {
+  color: #2d3436;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 600px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .faq-section {
+    padding: 20px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+
+  .answer {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kid's FAQ Zone</title>
+  <link rel="stylesheet" href="quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <header class="site-header">
+    <div class="container">
+      <h1>🌟 Kid's FAQ Zone</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="faq-section">
+    <h2>❓ Frequently Asked Questions</h2>
+    <ul class="faq-list">
+      <li>
+        <button class="question">🎈 What is this website about?</button>
+        <div class="answer">
+          <p>This is a fun blog where kids can learn cool coding stuff, fun facts, and exciting activities!</p>
+        </div>
+      </li>
+      <li>
+        <button class="question">🧑‍💻 Who made this blog?</button>
+        <div class="answer">
+          <p>This blog was created by Piyush Priyanshu to make learning fun and easy for everyone, especially kids!</p>
+        </div>
+      </li>
+      <li>
+        <button class="question">🌈 Can I join and write something?</button>
+        <div class="answer">
+          <p>Absolutely! If you have cool ideas or want to write, ask your parents and contact us!</p>
+        </div>
+      </li>
+      <li>
+        <button class="question">🎁 Is everything free here?</button>
+        <div class="answer">
+          <p>Yup! You can read, learn, and enjoy everything here for free. No hidden treasure chests needed!</p>
+        </div>
+      </li>
+      <li>
+        <button class="question">📅 When is it updated?</button>
+        <div class="answer">
+          <p>New exciting stuff is added every week! Keep checking for more fun and learning.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <footer class="site-footer">
+    <p>✨ Made with fun by Piyush Priyanshu | 💌 <a href="#">Say Hello!</a></p>
+    <p>🔗 <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+  </footer>
+
+
+  <script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.classList.toggle('show');
+        q.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
