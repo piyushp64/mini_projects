@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎓 College To-Do App</title>
+  <link rel="stylesheet" href="todo.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Your Task Buddy</h1>
+
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="What do you need to do?" />
+      <input type="datetime-local" id="taskTime" />
+      <label>
+        <input type="checkbox" id="priorityCheck" />
+        <span class="priority-label">🔥 Priority</span>
+      </label>
+      <button onclick="addTask()"><i class="fas fa-plus"></i> Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>

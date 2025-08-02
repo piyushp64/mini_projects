@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  color: #333;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 550px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="datetime-local"] {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  color: #333;
+}
+
+.input-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.priority-label {
+  color: #ff4c4c;
+  font-weight: 500;
+}
+
+.input-group button {
+  padding: 10px 15px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #43a047;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border-left: 5px solid transparent;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.1));
+}
+
+li.priority {
+  border-left-color: #ff4c4c;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-header span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.task-time {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+button.delete-btn {
+  background-color: transparent;
+  color: #ff4c4c;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+button.delete-btn:hover {
+  color: #ff1e1e;
+}
