@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KBC Quiz App</title>
+  <link rel="stylesheet" href="kbc.css">
+</head>
+<body>
+
+  <header>
+    <h1>🟢 Kaun Banega Crorepati Quiz</h1>
+  </header>
+
+  <main>
+    <div class="quiz-container">
+      <div class="question" id="question">Question will appear here</div>
+      <div class="options" id="options"></div>
+      <div class="lifeline">
+        <button onclick="useLifeline()">🛡️ 50:50 Lifeline</button>
+      </div>
+      <div class="result" id="result"></div>
+      <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Piyush Priyanshu | KBC Quiz Web App</p>
+  </footer>
+
+  <script src="kbc.js"></script>
+</body>
+</html>

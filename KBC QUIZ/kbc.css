@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom right, #ffeb3b, #fbc02d);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: linear-gradient(to right, #b2ff59, #76ff03);
+  color: #003300;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background: linear-gradient(to right, #b2ff59, #76ff03);
+  color: #003300;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  margin-top: auto;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.quiz-container {
+  width: 100%;
+  max-width: 600px;
+  border: 3px solid gold;
+  border-radius: 12px;
+  padding: 25px;
+  background-color: #001144;
+  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.question {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+  background-color: #003366;
+  color: white;
+  border: 2px solid gold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.options button:hover {
+  background-color: gold;
+  color: black;
+}
+
+.lifeline {
+  margin-top: 15px;
+}
+
+.lifeline button {
+  background-color: #222;
+  border: 2px solid cyan;
+  color: cyan;
+  padding: 5px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: yellow;
+}
+
+#next-btn {
+  display: none;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: gold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
